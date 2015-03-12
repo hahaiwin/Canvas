@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+
+    <script type= "text/javascript" src = "draw.js"></script>
+    <script type= "text/javascript" src = "Clock.js"></script>
+
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.inLineDiv{
+		display: inline-block;
+		margin-left: 20px;
+		margin-top: 20px;
+		height: 25px;
+	}
+	.button{
+		width: 60px;
+		height: 20px;
+	}
+	.canvas{
+		margin-left: 20px;
+		border: solid 1px;
+	}
+	</style>
+
+</head>
+<body onload= "main()">
+<div>
+  <div class="inLineDiv">
+      <label for="shapsct">Shap:</label>
+	  <select id="shapsct">
+	  <option value="Line">Line</option>
+	  <option value="Rectangle">Rectangle</option> 
+	  <option value="Circle">Circle</option>
+	  <option value="EllipseAndRect">EllipseAndRect</option>		
+	  </select> 
+  </div>
+  <div class="inLineDiv">
+      <label for="fillcbx">Fill:</label>
+	  <input type="checkbox" id="fillcbx"></input>
+  </div>
+  <div class="inLineDiv">
+	  <input type="button" class="button" value="Clear" id="clearBtn"></input>
+  </div>
+  <div class="inLineDiv">
+	  <input type="button" class="button" value="Clock" id="ClockBtn"></input>
+  </div>
+  <div class="inLineDiv">
+	  <a id="DownloadBtn"><input type="button" class="button" style="visibility:hidden;" value="Download" /></a>
+  </div>
+</div>
+
+<canvas class = "canvas" id="canvasId" width = '500px' height = '400px'></canvas>
+<div>
+   <div class="inLineDiv">
+	<label for="fillcbx">ShapNum:</label>
+	<input type="text" id="shapnumtext" readonly="true" class="button" value="0"></input>
+	</div>
+</div>
+
+</body>
+</html>
